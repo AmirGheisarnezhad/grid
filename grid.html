@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+    <style>
+        body{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: repeat(12, 1fr);
+            gap: 10px;
+            padding: 20px;
+            background-color: rgb(12, 11, 11);
+        }
+        .item{
+            
+            border: 2px solid yellow;
+            height: 100%;
+            min-height: 70px;
+        }
+        .container .item:nth-of-type(1) {
+            background-color: aqua;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .container .item:nth-of-type(2) {
+            background-color: red;
+            grid-column-start: 5;
+            grid-column-end: 9;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .container .item:nth-of-type(3) {
+            background-color: aqua;
+            grid-column-start: 9;
+            grid-column-end: 13;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .container .item:nth-of-type(4) {
+            background-color: rgb(227, 142, 5);
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .container .item:nth-of-type(5) {
+            background-color: rgb(168, 244, 4);
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 2;
+            grid-row-end: 3;
+        }
+        .container .item:nth-of-type(6) {
+            background-color: rgb(72, 7, 236);
+            grid-column-start: 5;
+            grid-column-end: 9;
+            grid-row-start: 2;
+            grid-row-end: 5;
+        }
+        .container .item:nth-of-type(7) {
+            background-color: rgb(237, 6, 245);
+            grid-column-start: 9;
+            grid-column-end: 11;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        .container .item:nth-of-type(8) {
+            background-color: rgb(235, 8, 19);
+            grid-column-start: 11;
+            grid-column-end: 13;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        .container .item:nth-of-type(9) {
+            background-color: rgb(237, 6, 245);
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+        .container .item:nth-of-type(10) {
+            background-color: rgb(119, 4, 4);
+            grid-column-start: 1;
+            grid-column-end: 4;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+        .container .item:nth-of-type(11) {
+            background-color: rgb(229, 115, 115);
+            grid-column-start: 4;
+            grid-column-end: 6;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+        .container .item:nth-of-type(12) {
+            background-color: rgb(229, 115, 115);
+            grid-column-start: 6;
+            grid-column-end: 9;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+        .container .item:nth-of-type(13) {
+            background-color: rgb(229, 115, 115);
+            grid-column-start: 9;
+            grid-column-end: 13;
+            grid-row-start: 5;
+            grid-row-end: 6;
+        }
+
+
+
+
+        
+    </style>
+</head>
+
+<body> 
+    <div class="container">
+        <div class="item">ogifdnjo;jklnaG;olingblkn aedtr:nj Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis hic, quos voluptatibus quidem dolorem error beatae explicabo fuga quis voluptatum soluta facilis pariatur impedit non fugiat modi accusamus laudantium tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, iste! Eaque aspernatur repudiandae, enim quod quibusdam quae doloremque exercitationem consequuntur ad eos id, in aliquid architecto eum maxime excepturi tempore dignissimos odit dolores delectus distinctio, laborum inventore. Totam numquam, minima quos molestiae corporis nihil perferendis! Totam, eos quas! Alias, eum?</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+        <div class="item">6</div>
+        <div class="item">7</div>
+        <div class="item">8</div>
+        <div class="item">9</div>
+        <div class="item">10</div>
+        <div class="item">11</div>
+        <div class="item">12</div>
+        <div class="item">13</div>
+    </div>
+</body>
+</html>
